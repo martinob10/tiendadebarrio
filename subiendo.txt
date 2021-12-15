@@ -1,0 +1,5 @@
+git init
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/martinob10/tiendadebarrio.git
+git push -u origin master
