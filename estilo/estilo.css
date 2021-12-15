@@ -1,0 +1,668 @@
+                /*Reseteo*/
+                
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                
+                body {
+                    font-family: Ubuntu Mono, Helvetica, sans-serif;
+                }
+                /*contendor*/
+                
+                .contendor-general {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr 1fr 1fr;
+                    grid-template-areas: "header" "principal" "noticias" "footer";
+                }
+                /* Encabezado*/
+                
+                .contenedor-header {
+                    grid-area: header;
+                    position: sticky;
+                    top: -1.8rem;
+                    width: 100%;
+                }
+                
+                .noti-header {
+                    background-color: rgb(245, 52, 245);
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+                
+                .logo-menu {
+                    width: 100%;
+                    background-color: #DFEEEA;
+                    color: #102022;
+                    display: flex;
+                    justify-content: space-between;
+                    font-family: Montserrat Alternates, Courier, monospace;
+                    border-bottom: solid 0.1rem;
+                    align-items: center;
+                }
+                
+                .logo {
+                    font-family: Ubuntu Mono, Helvetica, sans-serif;
+                    font-size: 1.4rem;
+                    margin-left: 20px;
+                    font-weight: 700;
+                }
+                
+                .logo a:hover {
+                    background-color: #DFEEEA;
+                    color: #102022;
+                }
+                
+                .Whatsapp {
+                    font-size: 1rem;
+                    margin: 0.1rem;
+                }
+                
+                .Whatsapp a:hover {
+                    font-size: 1rem;
+                    margin: 0.2rem;
+                    color: chartreuse;
+                }
+                
+                .nav ul {
+                    display: flex;
+                    margin: 0.3rem;
+                    padding: 0.3rem;
+                    font-size: 0.9rem;
+                }
+                
+                .nav ul li {
+                    color: #244347;
+                    margin: 0.3rem 0.6rem;
+                    list-style: none;
+                }
+                
+                a {
+                    text-decoration: none;
+                    color: #244347;
+                    padding: 0.1rem;
+                }
+                
+                a:hover {
+                    text-decoration: none;
+                    color: #c9eaee;
+                    background-color: #132325;
+                    padding: 0.1rem;
+                }
+                /*seccion principal*/
+                
+                .principal {
+                    background-image: linear-gradient( rgba(5, 250, 103, 0.3), rgba(238, 6, 168, 0.3)), url("../img/fondo.jpg");
+                    filter: contrast(90%);
+                    filter: grayscale(80%);
+                    background-position: bottom;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 28rem;
+                    min-width: 100%;
+                    display: grid;
+                    background-color: #A7C4BC;
+                    color: #f9fbfc;
+                    border-bottom: solid 1px;
+                }
+                
+                .texto {
+                    text-shadow: 1px 4px 1px rgba(26, 27, 27, 0.7);
+                    font-family: Ubuntu Mono, Helvetica, sans-serif;
+                }
+                
+                .texto h3 {
+                    font-size: 2rem;
+                    margin: 2rem;
+                }
+                
+                .texto p {
+                    font-size: 1.5rem;
+                    margin: 2rem;
+                }
+                
+                .titulo {
+                    float: right;
+                    margin: 2.5rem;
+                    font-size: 2.5rem;
+                }
+                
+                img {
+                    max-width: 100%;
+                    padding: 0.5rem;
+                }
+                
+                p {
+                    padding: 0.5rem;
+                }
+                /**Noticias*/
+                
+                .noticias {
+                    grid-area: noticias;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    flex-direction: row;
+                    padding-top: 1rem;
+                    background-color: white;
+                    box-shadow: 0px 0px 5px 1px rgb(38, 92, 54);
+                    margin: 1rem;
+                    justify-content: center;
+                    border-radius: 15px;
+                    text-align: justify;
+                    padding: 1rem;
+                    align-items: center;
+                }
+                
+                .noticias img {
+                    align-items: center;
+                }
+                
+                .card {
+                    text-align: justify;
+                    margin: 1rem;
+                    align-items: center;
+                    width: 30rem;
+                }
+                
+                .card h2 {
+                    color: #02c479;
+                    text-align: center;
+                }
+                
+                .card a {
+                    color: #02c479;
+                    float: right;
+                    border: 2px solid #02c479;
+                    border-radius: 25px;
+                    text-transform: uppercase;
+                }
+                
+                .card a:hover {
+                    background-color: white;
+                }
+                /* Iconos index*/
+                
+                .info-iconos {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 1rem;
+                    justify-content: space-around
+                }
+                
+                .icono-item {
+                    width: 14rem;
+                    margin: 1rem;
+                }
+                
+                .info-iconos h4 {
+                    font-size: 2rem;
+                    text-align: center;
+                    padding: 1rem;
+                }
+                
+                .info-iconos p {
+                    padding-bottom: 2rem;
+                }
+                /*Footer*/
+                
+                .footer {
+                    grid-area: footer;
+                    background-color: #e8eee5;
+                    color: #091310;
+                    font-size: 15px;
+                    text-align: center;
+                    text-decoration: none;
+                    padding-top: 10px;
+                }
+                
+                footer ul li {
+                    text-decoration: none;
+                    list-style: none;
+                }
+                
+                footer a:hover {
+                    padding: 10px;
+                }
+                
+                footer a:hover {
+                    color: #02c479;
+                    padding: 10px;
+                }
+                
+                .contenedor-footer {
+                    display: flex;
+                    text-decoration: none;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                
+                .titulo-news {
+                    font-size: 1.5rem;
+                    color: #15a16c;
+                }
+                
+                .contacto {
+                    margin: 1rem;
+                    padding-top: 1rem;
+                }
+                
+                .mapa-del-sitio {
+                    margin-top: 0.9rem;
+                    padding-top: 1rem;
+                }
+                
+                .mapa-del-sitio li {
+                    margin-top: 1rem;
+                    padding-top: 1rem;
+                }
+                
+                .derechos {
+                    padding-top: 0.1rem;
+                    display: block;
+                    width: 100%;
+                    background-color: #132325;
+                    color: white;
+                    font-size: 0.9rem;
+                }
+                /*Newsletter*/
+                
+                .news {
+                    padding: 1rem;
+                    margin: 1.5rem;
+                    background-color: #DFEEEA;
+                    text-align: center;
+                    font-size: 1rem;
+                    border-radius: 0.9rem;
+                    border: solid 0.1rem;
+                    text-align: center;
+                    justify-content: center;
+                    box-shadow: #132325 2px;
+                    text-decoration: none;
+                    align-items: center;
+                }
+                
+                .campo {
+                    border: solid 0.1rem;
+                    border-radius: 0.5rem;
+                    padding: 0.8rem;
+                    margin: 0.4rem;
+                    color: #02c479;
+                    font-family: Ubuntu Mono, Helvetica, sans-serif;
+                    letter-spacing: 0.2rem;
+                }
+                
+                .boton-enviar {
+                    padding: 0.9rem;
+                    font-size: 0.9rem;
+                    background-color: #213a3d;
+                    color: #DFEEEA;
+                    border-radius: 0.4rem;
+                    font-family: Ubuntu Mono, Helvetica, sans-serif;
+                }
+                
+                .boton-enviar:hover {
+                    padding: 1rem;
+                    background-color: aliceblue;
+                    color: #132325;
+                    border-radius: 1rem;
+                }
+                /*Negocios*/
+                /*   OTRO HTML   */
+                
+                .negocios {
+                    background-image: linear-gradient( rgba(5, 250, 103, 0.3), rgba(238, 6, 168, 0.3)), url("../img/tdsa.jpg");
+                    filter: contrast(90%);
+                    filter: grayscale(80%);
+                    background-position: bottom;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 250px;
+                    min-width: 100%;
+                    display: grid;
+                    background-color: #A7C4BC;
+                    color: #f9fbfc;
+                    border-bottom: solid 1px;
+                }
+                
+                .img-blog {
+                    background-image: linear-gradient( rgba(5, 250, 103, 0.3), rgba(238, 6, 168, 0.3)), url("../img/blog.jpg");
+                    background-position: center;
+                }
+                
+                .barrios {
+                    display: flex;
+                    flex-direction: row;
+                    background-color: white;
+                    justify-content: end;
+                    align-items: center;
+                }
+                
+                .barrios ul li {
+                    flex-direction: row;
+                    text-decoration: none;
+                }
+                
+                .barrios ul {
+                    display: flex;
+                    flex-direction: row;
+                    list-style: none;
+                    justify-content: space-evenly;
+                }
+                
+                .barrios ul li a {
+                    text-decoration: none;
+                    justify-content: space-around;
+                    padding: 25px 5px 25px 5px;
+                }
+                
+                .barrios ul li a:hover {
+                    background-color: #091310;
+                    color: white;
+                    text-decoration: none;
+                    justify-content: space-around;
+                    padding: 25px 5px 25px 5px;
+                    margin: 0;
+                }
+                
+                .negocios-listado {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    margin: 1rem;
+                }
+                
+                .navegacion-negocios {
+                    text-align: center;
+                    padding: 1rem;
+                    border-bottom: 0.1rem solid #A7C4BC;
+                }
+                
+                .navegacion-negocios ul li {
+                    display: inline-block;
+                }
+                
+                .navegacion-negocios a {
+                    color: #02c479;
+                    font-size: 1.2rem;
+                }
+                
+                .navegacion-negocios a:hover {
+                    transition: 1s;
+                    color: #f856d5;
+                    background-color: white;
+                }
+                
+                .categorias {
+                    margin-top: 1rem;
+                }
+                
+                .text-categorias span {
+                    font-size: 25px;
+                    color: #02c479;
+                    margin: 25px;
+                }
+                
+                .listado ul {
+                    margin: 10px 10px;
+                    padding: 0 10px;
+                    list-style: none;
+                }
+                
+                .listado ul li a {
+                    display: inline-block;
+                    margin: 0px;
+                }
+                
+                .listado ul li a:hover {
+                    background-color: white;
+                    color: #08c57d;
+                }
+                
+                .destacados {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .text-destacado {
+                    text-align: center;
+                    justify-content: center;
+                    font-size: 25px;
+                    color: #ec27b1;
+                    margin-top: 15px;
+                }
+                
+                .negocios-destacados {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 1rem;
+                    border: #f9fbfc;
+                    box-shadow: none;
+                }
+                
+                .img {
+                    width: 20%;
+                }
+                
+                .img p {
+                    font-size: 1rem;
+                    text-align: justify;
+                }
+                /*BLOG*/
+                
+                .noticias-blog {
+                    display: grid;
+                    grid-template-columns: 4fr 1fr;
+                    justify-items: center;
+                    padding: 0;
+                    text-align: center;
+                }
+                
+                .targetas-blog {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 1rem;
+                    margin: 1.5rem;
+                    width: 95%;
+                    justify-content: space-around;
+                }
+                
+                .contenedor-noti {
+                    padding: 0.9rem;
+                    border: 0.1rem solid #A7C4BC;
+                    margin: 0.9rem;
+                    background-color: #f5f9faea;
+                }
+                
+                .titular {
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    font-size: 15px;
+                    letter-spacing: 5px;
+                    font-weight: lighter;
+                    color: #244347;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                    padding-bottom: 10px;
+                    border-bottom: 2px double #091310;
+                }
+                
+                .text-noticia {
+                    font-size: 13px;
+                    text-align: justify;
+                    letter-spacing: 2px;
+                    margin-bottom: 20px;
+                    padding-bottom: 20px;
+                }
+                
+                .fecha {
+                    background-color: #A7C4BC;
+                    font-size: 13px;
+                    letter-spacing: 3px;
+                }
+                
+                .archivo {
+                    margin: 80px;
+                }
+                
+                .archivo ul li {
+                    list-style: none;
+                    margin: 35px;
+                    letter-spacing: 5px;
+                }
+                
+                .Whatsapp-min {
+                    display: none;
+                }
+                /*
+Colores: Verde Dark 4 = 2F5D62
+         Verder Dark 3 = 5E8B7E
+         Verde Light 2 = A7C4BC
+         Verde Ligth 1 = DFEEEA
+
+ Fuentes: 
+ 
+        font-family: 'Montserrat Alternates', sans-serif;   ( Medium 500, Bold 700) 
+        font-family: 'Ubuntu Mono', monospace;        ( Regular 400 italic, Bold 700 )
+*/
+                /* NEGOCIOS INDIVIDUALES HTML*/
+                
+                .negocio-individual {
+                    display: flex;
+                }
+                
+                .texto-negocio {
+                    font-size: 1.1rem;
+                    color: #132325;
+                }
+                
+                .categoria-negocio {
+                    font-size: 1.3rem;
+                    color: #778d87;
+                }
+                
+                .nombre-negocio {
+                    font-size: 2.6rem;
+                }
+                
+                .datos-pagos {
+                    margin: .7rem;
+                    font-size: 1.7rem;
+                    color: #02c479;
+                }
+                
+                .horario {
+                    color: #145343;
+                    font-size: 1.6rem;
+                }
+                /*Web Tierra de Sueños / LA carolina*/
+                
+                .negocios-tierra {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                }
+                
+                .categoria-negocio {
+                    width: 18rem;
+                    text-align: center;
+                    align-items: center;
+                }
+                /*   Medias!!  */
+                
+                @media screen and (max-width: 900px) {
+                    .titulo {
+                        font-size: 2rem;
+                    }
+                    .texto h3 {
+                        font-size: 1.7rem;
+                    }
+                    .texto p {
+                        font-size: 1.3rem;
+                    }
+                    .noticias {
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                    }
+                    .card {
+                        width: 20rem;
+                    }
+                    .logo {
+                        font-size: 1rem;
+                    }
+                    .Whatsapp {
+                        font-size: 0.7rem;
+                    }
+                    .contenedor-footer {
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                    }
+                    .contenedor-header {
+                        top: -2.1rem;
+                    }
+                    .noti-header {
+                        font-size: 0.7rem;
+                        padding: 0.01rem;
+                    }
+                    .barrios {
+                        justify-content: center;
+                    }
+                    .negocio-individual {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+                    .noticias-blog {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                    .archivo ul li {
+                        margin: 1rem;
+                    }
+                    .archivo ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: row;
+                    }
+                    .listado-barrio {
+                        display: block;
+                    }
+                    .barrio-categorias {
+                        font-size: 1.2rem;
+                        margin: .5rem;
+                    }
+                }
+                
+                @media screen and (max-width: 550px) {
+                    .Whatsapp {
+                        display: none;
+                    }
+                    .Whatsapp-min {
+                        display: unset;
+                    }
+                    .titulo {
+                        font-size: 2rem;
+                        text-align: center;
+                        margin: .7rem;
+                    }
+                    .texto h3 {
+                        font-size: 1.7rem;
+                        margin: 1rem;
+                    }
+                    p {
+                        margin: auto;
+                    }
+                    .barrios ul {
+                        flex-direction: column;
+                    }
+                    .navegacion-negocios a {
+                        color: #02c479;
+                        font-size: .9rem;
+                    }
+                }
