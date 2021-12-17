@@ -9,6 +9,22 @@
                 body {
                     font-family: Ubuntu Mono, Helvetica, sans-serif;
                 }
+                
+                p {
+                    padding: 0.4rem;
+                }
+                
+                a {
+                    text-decoration: none;
+                    color: #244347;
+                    padding: 0.1rem;
+                    transition: all .5s;
+                }
+                
+                a:hover {
+                    text-decoration: none;
+                    color: #c9eaee;
+                }
                 /*contendor*/
                 
                 .contendor-general {
@@ -22,25 +38,31 @@
                 .contenedor-header {
                     grid-area: header;
                     position: sticky;
+                    z-index: 100;
                     top: -1.8rem;
                     width: 100%;
                 }
                 
                 .noti-header {
-                    background-color: rgb(245, 52, 245);
-                    font-size: 0.8rem;
+                    background-color: #f558e0;
+                    font-size: 0.9rem;
                     text-align: center;
+                    letter-spacing: .2rem;
+                    border-bottom: solid 5px #fff;
                 }
                 
                 .logo-menu {
                     width: 100%;
-                    background-color: #DFEEEA;
-                    color: #102022;
+                    background: rgb(44, 247, 32);
+                    background: linear-gradient(39deg, rgba(44, 247, 32, 0.8023954241463307) 0%, rgba(255, 255, 255, 1) 36%, rgba(255, 255, 255, 0.791159469090151) 68%, rgba(253, 45, 238, 0.6113795860140931) 100%);
                     display: flex;
                     justify-content: space-between;
                     font-family: Montserrat Alternates, Courier, monospace;
-                    border-bottom: solid 0.1rem;
+                    border-bottom: solid 0.1rem #191A19;
                     align-items: center;
+                    padding: 1.9rem;
+                    margin-bottom: .9rem;
+                    position: sticky;
                 }
                 
                 .logo {
@@ -50,20 +72,36 @@
                     font-weight: 700;
                 }
                 
+                .logo a {
+                    font-family: Montserrat Alternates, Courier, monospace;
+                    font-size: 1.9rem;
+                    margin-left: 20px;
+                    font-weight: 900;
+                    color: rgb(240, 12, 152);
+                    text-shadow: 3px 3px 5px #f7f4f6;
+                    transition: .5s;
+                }
+                
                 .logo a:hover {
-                    background-color: #DFEEEA;
-                    color: #102022;
+                    text-shadow: 3px 3px 5px #161d19;
                 }
                 
                 .Whatsapp {
-                    font-size: 1rem;
+                    font-size: 1.15rem;
                     margin: 0.1rem;
                 }
                 
+                .Whatsapp a {
+                    color: rgb(16, 240, 83);
+                    text-shadow: 1px 1px 1px #161d19;
+                    opacity: 90%;
+                    transition: 1s;
+                }
+                
                 .Whatsapp a:hover {
-                    font-size: 1rem;
+                    font-size: 1.2rem;
                     margin: 0.2rem;
-                    color: chartreuse;
+                    opacity: 90%;
                 }
                 
                 .nav ul {
@@ -74,67 +112,64 @@
                 }
                 
                 .nav ul li {
-                    color: #244347;
+                    font-family: 'Open Sans', sans-serif;
+                    color: black;
+                    text-shadow: 3px 3px 5px #fff;
                     margin: 0.3rem 0.6rem;
                     list-style: none;
+                    font-size: 1.2rem;
                 }
                 
-                a {
-                    text-decoration: none;
-                    color: #244347;
-                    padding: 0.1rem;
+                .nav__menu li a {
+                    transition: all .1s;
                 }
                 
-                a:hover {
-                    text-decoration: none;
-                    color: #c9eaee;
-                    background-color: #132325;
-                    padding: 0.1rem;
+                .nav__menu li a:hover {
+                    color: rgb(240, 12, 152);
+                    border-bottom: solid 3px #02c479;
                 }
                 /*seccion principal*/
                 
                 .principal {
-                    background-image: linear-gradient( rgba(5, 250, 103, 0.3), rgba(238, 6, 168, 0.3)), url("../img/fondo.jpg");
-                    filter: contrast(90%);
-                    filter: grayscale(80%);
+                    display: grid;
+                    margin: 5rem 2rem;
+                    background-image: linear-gradient( rgba(245, 18, 226, 0.3), rgba(50, 243, 91, 0.3)), url("../img/fondo.jpg");
                     background-position: bottom;
                     background-repeat: no-repeat;
                     background-size: cover;
                     height: 28rem;
-                    min-width: 100%;
-                    display: grid;
-                    background-color: #A7C4BC;
+                    min-width: 90%;
                     color: #f9fbfc;
                     border-bottom: solid 1px;
                 }
                 
                 .texto {
-                    text-shadow: 1px 4px 1px rgba(26, 27, 27, 0.7);
-                    font-family: Ubuntu Mono, Helvetica, sans-serif;
+                    font-family: 'Open Sans', sans-serif;
+                    letter-spacing: .1rem;
+                    text-shadow: 3px 3px 5px #33212e;
                 }
                 
                 .texto h3 {
-                    font-size: 2rem;
+                    font-size: 2.7rem;
                     margin: 2rem;
+                    letter-spacing: .2rem;
                 }
                 
                 .texto p {
-                    font-size: 1.5rem;
-                    margin: 2rem;
+                    font-size: 1.8rem;
+                    margin: 1.5rem;
                 }
                 
                 .titulo {
                     float: right;
                     margin: 2.5rem;
-                    font-size: 2.5rem;
+                    font-size: 3rem;
+                    border-bottom: 3px solid #ec27b1;
+                    letter-spacing: .3rem;
                 }
                 
                 img {
                     max-width: 100%;
-                    padding: 0.5rem;
-                }
-                
-                p {
                     padding: 0.5rem;
                 }
                 /**Noticias*/
@@ -146,8 +181,8 @@
                     flex-direction: row;
                     padding-top: 1rem;
                     background-color: white;
-                    box-shadow: 0px 0px 5px 1px rgb(38, 92, 54);
-                    margin: 1rem;
+                    box-shadow: 0px 0px 5px 1px rgb(194, 238, 207);
+                    margin: 5rem;
                     justify-content: center;
                     border-radius: 15px;
                     text-align: justify;
@@ -164,6 +199,12 @@
                     margin: 1rem;
                     align-items: center;
                     width: 30rem;
+                    opacity: 60%;
+                    transition: 1s;
+                }
+                
+                .card:hover {
+                    opacity: 100%;
                 }
                 
                 .card h2 {
@@ -313,8 +354,7 @@
                 
                 .negocios {
                     background-image: linear-gradient( rgba(5, 250, 103, 0.3), rgba(238, 6, 168, 0.3)), url("../img/tdsa.jpg");
-                    filter: contrast(90%);
-                    filter: grayscale(80%);
+                    margin: 5rem 2rem;
                     background-position: bottom;
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -375,6 +415,8 @@
                 }
                 
                 .navegacion-negocios {
+                    font-family: 'Open Sans', sans-serif;
+                    letter-spacing: .1rem;
                     text-align: center;
                     padding: 1rem;
                     border-bottom: 0.1rem solid #A7C4BC;
@@ -397,12 +439,15 @@
                 
                 .categorias {
                     margin-top: 1rem;
+                    font-family: 'Open Sans', sans-serif;
                 }
                 
                 .text-categorias span {
-                    font-size: 25px;
+                    font-size: 1.5rem;
+                    font-family: 'Open Sans', sans-serif;
                     color: #02c479;
                     margin: 25px;
+                    border-bottom: 1px solid black;
                 }
                 
                 .listado ul {
@@ -517,6 +562,7 @@
                 }
                 
                 .Whatsapp-min {
+                    color: #02c479;
                     display: none;
                 }
                 /*
@@ -593,7 +639,7 @@ Colores: Verde Dark 4 = 2F5D62
                     .card {
                         width: 20rem;
                     }
-                    .logo {
+                    .logo a {
                         font-size: 1rem;
                     }
                     .Whatsapp {
@@ -645,6 +691,10 @@ Colores: Verde Dark 4 = 2F5D62
                     }
                     .Whatsapp-min {
                         display: unset;
+                        color: #02c479;
+                    }
+                    .Whatsapp-min a {
+                        color: #02c479;
                     }
                     .titulo {
                         font-size: 2rem;
